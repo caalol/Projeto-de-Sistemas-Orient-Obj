@@ -7,7 +7,7 @@ Atores:
 
 **Casos de Uso**
 
-- Administrador de TI: Configura Hardware/Software, Estabelece políticas de segurança e gerenciamento, Gerencia usuários, Monitora performance, Gerencia backups, Atualiza o sistema.
+- Administrador de TI: Configura o sistema, Estabelece políticas de segurança e gerenciamento, Gerencia usuários, Monitora performance, Gerencia backups, Atualiza o sistema.
 - Suporte Técnico: Gerencia chamados, Diagnóstico de problemas, Mantém registros de problemas. 
 - Usuário Final: Acessa recursos, Reporta problemas, Consulta documentação.
 
@@ -18,26 +18,32 @@ Atores:
 - nome: string
 - email: string
 - senha: string
-- tipo: string
+  
   Usuário - Métodos
-- login():boolean
-- alterarSenha(nova senha: string): void
+- acessarRecursos(): void
+- reportarProblemas(): void
 - consultarDocumentacao(): void
 
-  Administrador(Herda Usuário) - Atributos
-- permissoes: List<string>
-  Administrador(Herda Usuário) - Métodos
-- configurarSistema(configuracao: Configuracao): void
-- gerenciarUsuarios(usuario: Usuario, acao: string): void
-- monitorarPerformance(): PerformanceRelatorio
+  Administrador - Atributos
+- id: int
+- nome: string
+- email: string
+- senha: string
+- 
+  Administrador - Métodos
+- configurarSistema(): void
+- gerenciarUsuarios(): void
+- monitorarPerformance(): void
 - gerenciarBackups(acao: string): void
 - atualizarSistema(): void
 
-  Usuário Final (Herda de Usuário) - Métodos
-- reportarProblema(problema: Problema): void
-- acessarRecursos(): void
+  Suporte Técnico - Métodos
+- id: string
+- nome: string
+- email: string
+- nivel: string
 
-  Suporte Técnico (Herda de Usuários) - Métodos
-- gerenciarTickets(ticket: Ticket, acao: string): void
-- diagnosticarProblema(problema: Problema): void
-- manterRegistros(incidente: Incidente): void
+  Suporte Técnico - Métodos
+- gerenciarChamados(): void
+- diagnosticarProblemas(): void
+- manterRegistrosProblemas(): void
