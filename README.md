@@ -4,14 +4,12 @@ Atores:
 - Administrador de TI: Configuração e manutenção do sistema e gerenciamento de permissões e acessos dos usuários.
 - Suporte Técnico: Auxilia na resolução de problemas e gestão de chamados de suporte. 
 - Usuário Final: Realiza tarefas diárias no sistema (acessa recursos e reporta problemas).
-- Banco de dados: Armazena as informações do sistema.
 
 **Casos de Uso**
 
 - Administrador de TI: Configura Hardware/Software, Estabelece políticas de segurança e gerenciamento, Gerencia usuários, Monitora performance, Gerencia backups, Atualiza o sistema.
 - Suporte Técnico: Gerencia chamados, Diagnóstico de problemas, Mantém registros de problemas. 
 - Usuário Final: Acessa recursos, Reporta problemas, Consulta documentação.
-- Banco de dados: Armazenar dados, Consultar dados, Atualizar Dados, Excluir dados.
 
 **Diagrama de Classes**
 
